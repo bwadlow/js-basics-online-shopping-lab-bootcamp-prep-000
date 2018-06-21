@@ -19,8 +19,7 @@ function addToCart(item) {
 
 function viewCart() {
   if(!cart.length) return 'Your shopping cart is empty.'
-  let itemAndPrice=[];
-  let intro='In your cart, you have ';
+  let sentenceStart='In your cart, you have ';
   for (let i=0; i<cart.length; i++) {
     for (let keys in cart[i]) {
     
