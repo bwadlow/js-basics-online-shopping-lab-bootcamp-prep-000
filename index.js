@@ -24,6 +24,7 @@ function viewCart() {
     sentenceStart+=`${cart[0].itemName} at $${cart[0].itemPrice}.`
   }
   if(cart.length>=2) {
+    middleSentence=''
     
   }
 }
