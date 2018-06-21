@@ -21,14 +21,14 @@ function viewCart() {
   if(!cart.length) return 'Your shopping cart is empty.'
   let sentenceStart='In your cart, you have '
   if(cart.length>=1) {
-    sentenceStart+=`${cart[0].itemName} at $${cart[0].itemPrice}.`
+    sentenceStart+=`${cart[0].itemName} at $${cart[0].itemPrice}`
   }
   if(cart.length>=2) {
    let middleSentence=''
     for (let i=1; i<cart.length-1; i++) {
       middleSentence+= `, ${cart[i].itemName} at $${cart[i].itemPrice}`
     }
-    sentenceStart+= `${middleSentence}, and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}`
+    sentenceStart+= `${middleSentence}, and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
   }
   return sentenceStart
 }
