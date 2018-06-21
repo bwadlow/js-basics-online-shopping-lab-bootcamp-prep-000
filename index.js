@@ -21,7 +21,10 @@ function viewCart() {
   if(!cart.length) return 'Your shopping cart is empty.'
   let sentenceStart='In your cart, you have '
   if(cart.length>=1) {
-    sentenceStart+=`${cart[0].itemName} at $${cart[0].itemPrice}`
+    sentenceStart+=`${cart[0].itemName} at $${cart[0].itemPrice}.`
+  }
+  if(cart.length>=2) {
+    
   }
 }
 
