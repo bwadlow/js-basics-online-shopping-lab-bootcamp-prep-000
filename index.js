@@ -25,7 +25,9 @@ function viewCart() {
   }
   if(cart.length>=2) {
     middleSentence=''
-    
+    for (let i=1; i<cart.length-1; i++) {
+      middleSentence+= `, ${cart[i].itemName} at $${cart[i].itemPrice}`
+    }
   }
 }
 
