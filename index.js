@@ -28,7 +28,7 @@ function viewCart() {
     for (let i=1; i<cart.length-1; i++) {
       middleSentence+= `, ${cart[i].itemName} at $${cart[i].itemPrice}`
     }
-    sentenceStart+=
+    sentenceStart+= `${middleSentence}, and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
   }
 }
 
