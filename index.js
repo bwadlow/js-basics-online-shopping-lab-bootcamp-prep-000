@@ -19,12 +19,7 @@ function addToCart(item) {
 
 function viewCart() {
   if(!cart.length) return 'Your shopping cart is empty.'
-  let sentenceStart='In your cart, you have ';
-  for (let i=0; i<cart.length; i++) {
-    for (let keys in cart[i]) {
-    
-    }
-  }
+  if(cart.length>1) 
 
 }
 
