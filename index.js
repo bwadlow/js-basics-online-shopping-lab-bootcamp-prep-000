@@ -19,6 +19,7 @@ function addToCart(item) {
 
 function viewCart() {
   if(!cart.length) return 'Your shopping cart is empty.'
+  let sentenceStart
   if(cart.length>=1) {
     
   }
